@@ -1,3 +1,4 @@
+#Project-Snake-For-MCU
 This is a hobby project to make a snake game that can run on an inexpensive MCU.
 It is based on the classic game "snake" and is programmed in mostly barebones C. 
 This is merely a development build, and it is not yet ready for actual MCU implementation. However, it functions as expected in VisualStudio during debug mode.
