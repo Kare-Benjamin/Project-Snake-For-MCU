@@ -1,8 +1,10 @@
-# Project-Snake-For-MCU
-A hobby project to make a snake which can run on an inexpensive mcu.
+This is a hobby project to make a snake game that can run on an inexpensive MCU.
 It is based on the classic game "snake" and is programmed in mostly barebones C. 
-This is merely a development build and it is not yet ready for real implementation, however functions as expected in VisualStudio during debugmode.
-It uses some functions (sleep(delay)) and system("clc") which must have been replaced for MCU implementation amoungst others.
+This is merely a development build, and it is not yet ready for actual MCU implementation. However, it functions as expected in VisualStudio during debug mode.
+
+The game field is based on a [x][y] matrix and takes user input to control a snake, and uses random functions to spawn the snake and the enemies (food). It also has logic to determine whether the spawn is legal/fun to enhance the game experience. Lastly, it has some switch/case menus and functionality supporting sleep mode and shutting down the MCU.
+
+It uses some functions (sleep(delay)) and system("clc"), which must be replaced for MCU implementation. Sleep should be replaced by interruptions, allowing the MCU to process the game logic between accepting user input (such as with a timer).
 
 The project thus uses 
 
@@ -13,7 +15,6 @@ The project thus uses
   <li> conio.h  </li>
 </lo>
 
-It uses a [x][y] matrix gamefiled system and takes user input to control a snake and uses random functions to spawn the snake and the enemies (food). It also has logic to determine wether the spawn is legal/fun to enhance the game experience. Lastly it has some switch/case menues and functionality supporting sleep/shut down of the MCU.
 
 <h1> In-game control </h1>
 
